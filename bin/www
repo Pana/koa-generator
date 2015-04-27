@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+'use strict'
+let debug = require('debug')('koa')
+let app = require('../app.js')
+const CONFIG = require('../config.json')
+let port = CONFIG.port || process.env.PORT || 3000
+let server = app.listen(port)
+debug('Koa server listening on port ' + port)

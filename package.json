@@ -1,0 +1,31 @@
+{
+  "name": "KoaGenerator",
+  "version": "0.1.0",
+  "description": "Koa generator",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Pana",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.5.2",
+    "koa": "^0.19.1",
+    "koa-body": "^1.2.1",
+    "koa-compose": "^2.3.0",
+    "koa-error": "^1.1.3",
+    "koa-gzip": "^0.1.0",
+    "koa-logger": "^1.2.2",
+    "koa-qs": "^2.0.0",
+    "koa-router": "^4.3.2",
+    "koa-session": "^3.1.0",
+    "koa-static": "^1.4.9",
+    "lodash": "^3.7.0",
+    "sequelize": "^2.0.6",
+    "sqlite3": "^3.0.5"
+  },
+  "devDependencies": {
+    "debug": "^2.1.3"
+  }
+}
