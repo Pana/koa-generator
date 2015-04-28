@@ -10,6 +10,9 @@ let koaBody = require('koa-body')
 let koaQs = require('koa-qs')
 let gzip = require('koa-gzip')
 let session = require('koa-session')
+let render = require('koa-ejs')
+let path = require('path')
+let helmet = require('koa-helmet');
 
 // sync schema
 sequelize.sync()
@@ -18,7 +21,20 @@ app.use(serve('./public'))
 app.keys = ['koa application']
 app.use(session(app))
 koaQs(app) // nested querysting support
-app.use(koaBody({formidable:{uploadDir: __dirname}}))
+app.use(koaBody({
+    formidable: {
+        uploadDir: __dirname
+    }
+}))
+app.use(helmet.defaults())
+render(app, {
+    root: path.join(__dirname, 'views'),
+    layout: 'template',
+    viewExt: 'html',
+    cache: false,
+    debug: true,
+    filters: {}
+})
 app.use(logger())
 app.use(error())
 setRoutes(app)

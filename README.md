@@ -19,8 +19,9 @@ If you want to use mongodb, you can choose your favorite mongodb ORM driver whic
 
 
 ## middlewares
+
 * logger   https://github.com/koajs/logger
-* view
+* view    https://github.com/queckezz/koa-views   https://github.com/koajs/ejs
 * static files   https://github.com/koajs/static
 * router    https://github.com/alexmingoia/koa-router
 * model     sequelize
