@@ -1,6 +1,6 @@
 ## koa yoeman generator
 
-## Useage
+## Usage
 
 Because koa require generator so you should use iojs or nodejs > 0.12 with harmony flag opend.
 We recommend use iojs, in code we use a lot ES6 feature
@@ -28,3 +28,10 @@ If you want to use mongodb, you can choose your favorite mongodb ORM driver whic
 * error handler   https://github.com/koajs/error
 * session & cookie    https://github.com/koajs/session   https://github.com/koajs/generic-session
 * params    koa-body,   koa-qs
+
+
+## TODO
+
+* Tests
+* Should have two version: web, API
+* should be well documented

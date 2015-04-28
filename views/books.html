@@ -1,0 +1,30 @@
+<h3>Bookshelf</h3>
+<a href="/books/new">Add book</a>
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <% data.rows.forEach(function (item) { %>
+            <tr>
+                <td>
+                    <%= item.id %>
+                </td>
+                <td>
+                    <%= item.name %>
+                </td>
+                <td>
+                    <%= item.author %>
+                </td>
+                <td>
+                    <a href="/books/<%=item.id%>?_method=PUT">Update</a>
+                    &nbsp;&nbsp;
+                    <a href="/books/<%=item.id%>?_method=DELETE">Delete</a>
+                </td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
