@@ -1,4 +1,4 @@
-## koa yoeman generator
+## koa yeoman generator
 
 ## Usage
 
