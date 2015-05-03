@@ -1,6 +1,6 @@
-'use strict'
-let router = require('koa-router')()
-module.exports = router
+'use strict';
+let router = require('koa-router')();
+module.exports = router;
 
 router
     .get('/', function*(next) {

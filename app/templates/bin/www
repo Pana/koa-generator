@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-'use strict'
-let debug = require('debug')('koa')
-let sequelize = require('../models').sequelize
-sequelize.sync()
-let app = require('../app.js')
-const CONFIG = require('../config.json')
-let port = process.env.PORT || CONFIG.port || 3000
-let server = app.listen(port)
-debug('Koa server listening on port ' + port)
+'use strict';
+let debug = require('debug')('koa');
+let sequelize = require('../models').sequelize;
+sequelize.sync();
+let app = require('../app.js');
+const CONFIG = require('../config.json');
+let port = process.env.PORT || CONFIG.port || 3000;
+let server = app.listen(port);
+debug('Koa server listening on port ' + port);

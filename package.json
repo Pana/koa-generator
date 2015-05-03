@@ -1,0 +1,15 @@
+{
+  "name": "KoaGenerator",
+  "version": "0.1.0",
+  "description": "Koa generator",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pana/koa-generator.git"
+  },
+  "author": "Pana",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.19.2"
+  }
+}
