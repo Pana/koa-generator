@@ -1,5 +1,5 @@
 {
-  "name": "KoaGenerator",
+  "name": "generator-koaapp",
   "version": "0.1.0",
   "description": "Koa generator",
   "scripts": {},
@@ -10,6 +10,7 @@
   "author": "Pana",
   "license": "MIT",
   "dependencies": {
+    "readdir-recursive": "0.0.4",
     "yeoman-generator": "^0.19.2"
   }
 }
